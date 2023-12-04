@@ -1,0 +1,140 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.fContainer {
+  display: flex;
+  width: 100%;
+  background-color: rgb(59, 62, 62);
+}
+
+.mContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  background-image: url(zz.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.fContent {
+  flex-direction: row;
+  font-size: 20px;
+  justify-content: center;
+  padding: 15px;
+}
+
+.fContent>img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50px;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 5);
+}
+
+.wrapper {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(22, 37, 70);
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 5);
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+}
+
+.firstname {
+  color: aliceblue;
+  font-weight: 700;
+  padding-left: 10px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+.lastname {
+  color: tomato;
+  font-weight: 400;
+  padding-left: 4px; 
+  font-size: 30px;
+}
+
+.topline {
+  color: crimson;
+  /* margin-top: 20%; */
+  /* margin-left: 40px; */
+  font-weight: 1000;
+  font-size: 40px;
+}
+
+.midline {
+  font-weight: 300;
+  /* margin-left: 40px; */
+  color: tomato;
+}
+
+.botline{
+    font-weight: 300;
+    /* margin-left: 40px; */
+    color: rgb(255, 255, 255);
+}
+
+/* CSS NAVIGATION BAR */
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation > li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+.navigation > li > a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navigation > li > a:hover {
+  color: tomato;
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation > li > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.navigation > li > img:hover {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  transition: all 0.3s ease-in-out;
+}
+
+.active {
+  background-color: tomato;
+  padding: 15px;
+}
+
+.active:hover {
+  color: white !important;
+}
